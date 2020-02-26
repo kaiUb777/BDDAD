@@ -1,0 +1,55 @@
+1.
+
+a) V
+b) F
+c) V
+d) F
+
+2. 
+
+-- Normalização
+
+1FN: Chave primária
+     Atributos atómicos (não são decomponiveis. Ex: Morada não é atómico pq (rua, cod. postal,habitação))
+
+2FN: 1FN;
+     Atributos não chave primária tem dependencia funcional total da chave primária.
+
+3FN: 2FN;
+     Não pode haver dependências funcionais transitivas entre atributos não chave e a chave.
+     	
+
+a) Existe um atributo não chave depende (C) que depende de outro atributo não chave (B).
+   Está na 2FN
+
+b) R1: B(primary key) -> C | R2: A (primary key) -> B
+ 
+3.
+
+a) 1FN
+
+b) A -> D e A -> E então A -> D,E
+   R1 = {A(pk),D,E} 3FN 
+   R2 = {A(pk),B(pk),C} 3FN   
+
+A,B(primary key) -> C,D,E decomposição A,B -> C e A,B -> D e A,B -> E
+
+c) Sim, possuí a dependência funcional A,B -> D
+
+4. c)
+
+5. 
+
+a) papel
+
+b) Chaves Candidatas: (A,C)
+
+c) Não está na 3FM, mas sim na 1FN
+
+d) R1 = {A(pk), B} 3FN
+   R2 = {} papel
+
+6.
+a) papel
+b) E | A | C,D | B,C
+c)  
